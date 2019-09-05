@@ -307,7 +307,7 @@ Piso 20-A";Buenos Aires;;1010;Argentina
 10537;RICSU;1;09/05/2017;23/05/2017;18/05/2037;14/05/2017;1;78,85;Richter Supermarkt;Starenweg 5;Genève;;1204;Suíça
 10538;BSBEV;9;10/05/2017;07/06/2017;02/06/2037;11/05/2017;3;4,87;B's Beverages;Fauntleroy Circus;London;;EC2 5NT;Reino Unido
 10539;BSBEV;6;11/05/2017;08/06/2017;03/06/2037;18/05/2017;3;12,36;B's Beverages;Fauntleroy Circus;London;;EC2 5NT;Reino Unido
-10540;QUICK;3;14/05/2017;11/06/2017;06/06/2037;08/06/2017;3;1.007,64;QUICK-Stop;Taucherstraße 10;Cunewalde;;01307;Alemanha
+10540;QUICK;3;14/05/2017;11/06/2017;06/06/2037;08/06/2017;3;1007,64;QUICK-Stop;Taucherstraße 10;Cunewalde;;01307;Alemanha
 10541;HANAR;2;14/05/2017;11/06/2017;06/06/2037;24/05/2017;1;68,65;Hanari Carnes;Rua do Paço, 67;Rio de Janeiro;RJ;05454-876;Brasil
 10542;KOENE;1;15/05/2017;12/06/2017;07/06/2037;21/05/2017;3;10,95;Königlich Essen;Maubelstr. 90;Brandenburg;;14776;Alemanha
 10543;LILAS;8;16/05/2017;13/06/2017;08/06/2037;18/05/2017;2;48,17;LILA-Supermercado;Carrera 52 con Ave. Bolívar #65-98 Llano Largo;Barquisimeto;Lara;3508;Venezuela
@@ -816,7 +816,7 @@ Suite 2";Portland;OR;97201;EUA
 Stratford St. Mary";Colchester;Essex;CO7 6JX;Reino Unido
 11017;ERNSH;9;08/04/2018;06/05/2018;01/05/2038;15/04/2018;2;754,26;Ernst Handel;Kirchgasse 6;Graz;;8010;Áustria
 11018;LONEP;4;08/04/2018;06/05/2018;01/05/2038;11/04/2018;2;11,65;Lonesome Pine Restaurant;89 Chiaroscuro Rd.;Portland;OR;97219;EUA
-11019;RANCH;6;08/04/2018;06/05/2018;01/05/2038;7300;3;3,17;Rancho grande;Av. del Libertador 900;Buenos Aires;;1010;Argentina
+11019;RANCH;6;08/04/2018;06/05/2018;01/05/2038;;3;3,17;Rancho grande;Av. del Libertador 900;Buenos Aires;;1010;Argentina
 11020;OTTIK;2;09/04/2018;07/05/2018;02/05/2038;11/04/2018;2;43,30;Ottilies Käseladen;Mehrheimerstr. 369;Köln;;50739;Alemanha
 11021;QUICK;3;09/04/2018;07/05/2018;02/05/2038;16/04/2018;1;297,18;QUICK-Stop;Taucherstraße 10;Cunewalde;;01307;Alemanha
 11022;HANAR;9;09/04/2018;07/05/2018;02/05/2038;29/04/2018;2;6,27;Hanari Carnes;Rua do Paço, 67;Rio de Janeiro;RJ;05454-876;Brasil

@@ -124,42 +124,48 @@ COMMENT ON SCHEMA public IS 'standard public schema';
 -- 
 -- select * from funcionarios;
 
-CREATE TABLE pedidos
-(
-  id int,
-  idCliente varchar(50),
-  idFuncionario int,
-  dataDoPedido varchar(50),
-  dataDeEntrega varchar(50),
-  dataDeEntrega2 varchar(50),
-  dataDeEnvio varchar(50),
-  via int,
-  frete money,
-  nomeDestinatario varchar(50),
-  enderecoDestinatario varchar(50),
-  cidadeDestino varchar(50),
-  regiaoDestino varchar(50),
-  cepDestino varchar(50),
-  paisDestino varchar(50),
-  CONSTRAINT pedidos_pkey PRIMARY KEY (id)
-);
-
-COPY pedidos 
-FROM '/home/rafael/ifpb/intEmpresarial/dataAnaliseNorthWind/NorthwindCsv/Pedidos.csv' DELIMITER ';' CSV HEADER;
-
-UPDATE pedidos SET dataDoPedido = TO_DATE(dataDoPedido,'DD/MM/YYYY');
-UPDATE pedidos SET dataDaEntrega = TO_DATE(dataDaEntrega,'DD/MM/YYYY');
-UPDATE pedidos SET dataDaEntrega2 = TO_DATE(dataDaEntrega2,'DD/MM/YYYY');
-UPDATE pedidos SET dataDeEnvio = TO_DATE(dataDeEnvio,'DD/MM/YYYY');
-
-ALTER TABLE pedidos
-ALTER COLUMN dataDoPedido TYPE date USING dataDoPedido::date;
-ALTER TABLE pedidos
-ALTER COLUMN dataDaEntrega TYPE date USING dataDaEntrega::date;
-ALTER TABLE pedidos
-ALTER COLUMN dataDaEntrega2 TYPE date USING dataDaEntrega2::date;
-ALTER TABLE pedidos
-ALTER COLUMN dataDeEnvio TYPE date USING dataDeEnvio::date;
- 
-select * from pedidos;
+-- CREATE TABLE pedidos
+-- (
+--   id int,
+--   idCliente varchar(50),
+--   idFuncionario int,
+--   dataDoPedido varchar(50),
+--   dataDeEntrega varchar(50),
+--   dataDeEntrega2 varchar(50),
+--   dataDeEnvio varchar(50),
+--   via int,
+--   frete money,
+--   nomeDestinatario varchar(50),
+--   enderecoDestinatario varchar(50),
+--   cidadeDestino varchar(50),
+--   regiaoDestino varchar(50),
+--   cepDestino varchar(50),
+--   paisDestino varchar(50),
+--   CONSTRAINT pedidos_pkey PRIMARY KEY (id)
+-- );
+-- 
+-- COPY pedidos 
+-- FROM '/home/rafael/ifpb/intEmpresarial/dataAnaliseNorthWind/NorthwindCsv/Pedidos.csv' DELIMITER ';' CSV HEADER;
+-- 
+-- 
+-- update pedidos set dataDeEnvio = NULL where dataDeEnvio = '7300';
+-- 
+-- UPDATE pedidos SET dataDoPedido = TO_DATE(dataDoPedido,'DD/MM/YYYY');
+-- UPDATE pedidos SET dataDeEntrega = TO_DATE(dataDeEntrega,'DD/MM/YYYY');
+-- UPDATE pedidos SET dataDeEntrega2 = TO_DATE(dataDeEntrega2,'DD/MM/YYYY');
+-- UPDATE pedidos SET dataDeEnvio = TO_DATE(dataDeEnvio,'DD/MM/YYYY');
+-- 
+-- 
+-- UPDATE pedidos SET frete = frete/100;
+-- 
+-- ALTER TABLE pedidos
+-- ALTER COLUMN dataDoPedido TYPE date USING dataDoPedido::date;
+-- ALTER TABLE pedidos
+-- ALTER COLUMN dataDeEntrega TYPE date USING dataDeEntrega::date;
+-- ALTER TABLE pedidos
+-- ALTER COLUMN dataDeEntrega2 TYPE date USING dataDeEntrega2::date;
+-- ALTER TABLE pedidos
+-- ALTER COLUMN dataDeEnvio TYPE date USING dataDeEnvio::date;
+--  
+-- select * from pedidos;
 

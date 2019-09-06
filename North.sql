@@ -169,3 +169,37 @@ COMMENT ON SCHEMA public IS 'standard public schema';
 --  
 -- select * from pedidos;
 
+-- CREATE TABLE produtos
+-- (
+--   id int,
+--   nomeProd varchar(50),
+--   idForn int,
+--   idCateg int,
+--   qntPorUnit varchar(100),
+--   preco money,
+--   estoque int,
+--   unidPedidas int,
+--   nivelRepo int,
+--   descontinuado varchar(20),
+--   CONSTRAINT produtos_pkey PRIMARY KEY (id)
+-- );
+-- 
+-- COPY produtos 
+-- FROM '/home/rafael/ifpb/intEmpresarial/dataAnaliseNorthWind/NorthwindCsv/Produtos.csv' DELIMITER ';' CSV HEADER;
+-- 
+-- UPDATE produtos SET preco = preco/100;
+-- 
+-- select * from produtos;
+
+-- CREATE TABLE Transportadoras
+-- (
+--   id int,
+--   nome varchar(50),
+--   telefone varchar(50),
+--   CONSTRAINT produtos_pkey PRIMARY KEY (id)
+-- );
+-- 
+-- COPY transportadoras 
+-- FROM '/home/rafael/ifpb/intEmpresarial/dataAnaliseNorthWind/NorthwindCsv/Transportadoras.csv' DELIMITER ';' CSV HEADER;
+-- 
+-- select * from transportadoras;

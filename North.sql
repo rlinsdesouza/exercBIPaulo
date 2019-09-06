@@ -1,12 +1,12 @@
-﻿DROP SCHEMA public CASCADE;
-CREATE SCHEMA public;
-
-GRANT ALL ON SCHEMA public TO postgres;
-GRANT ALL ON SCHEMA public TO public;
-COMMENT ON SCHEMA public IS 'standard public schema';
-
-
-
+﻿-- DROP SCHEMA public CASCADE;
+-- CREATE SCHEMA public;
+-- 
+-- GRANT ALL ON SCHEMA public TO postgres;
+-- GRANT ALL ON SCHEMA public TO public;
+-- COMMENT ON SCHEMA public IS 'standard public schema';
+-- 
+-- 
+-- 
 -- CREATE TABLE Categorias
 -- (
 --   id int,
@@ -18,10 +18,10 @@ COMMENT ON SCHEMA public IS 'standard public schema';
 -- 
 -- COPY categorias 
 -- FROM '/home/rafael/ifpb/intEmpresarial/dataAnaliseNorthWind/NorthwindCsv/Categorias.csv' DELIMITER ';' CSV HEADER;
-
---select * from categorias;
-
-
+-- 
+-- --select * from categorias;
+-- 
+-- 
 -- CREATE TABLE Clientes
 -- (
 --   id character varying(50),
@@ -44,8 +44,6 @@ COMMENT ON SCHEMA public IS 'standard public schema';
 -- FROM '/home/rafael/ifpb/intEmpresarial/dataAnaliseNorthWind/NorthwindCsv/Clientes.csv' DELIMITER ';' CSV HEADER;
 -- 
 -- select * from clientes;
-
--- drop table itens;
 -- 
 -- CREATE TABLE itens
 -- (
@@ -65,7 +63,7 @@ COMMENT ON SCHEMA public IS 'standard public schema';
 -- UPDATE itens SET descontoitem = descontoitem/1000000000;
 -- 
 -- select * from itens;
-
+-- 
 -- CREATE TABLE fornecedores
 -- (
 --   id int,
@@ -87,7 +85,7 @@ COMMENT ON SCHEMA public IS 'standard public schema';
 -- FROM '/home/rafael/ifpb/intEmpresarial/dataAnaliseNorthWind/NorthwindCsv/Fornecedores.csv' DELIMITER ';' CSV HEADER;
 -- 
 -- select * from fornecedores;
-
+-- 
 -- CREATE TABLE funcionarios
 -- (
 --   id int,
@@ -123,7 +121,7 @@ COMMENT ON SCHEMA public IS 'standard public schema';
 -- ALTER COLUMN admissao TYPE date USING nascimento::date;
 -- 
 -- select * from funcionarios;
-
+-- 
 -- CREATE TABLE pedidos
 -- (
 --   id int,
@@ -168,7 +166,7 @@ COMMENT ON SCHEMA public IS 'standard public schema';
 -- ALTER COLUMN dataDeEnvio TYPE date USING dataDeEnvio::date;
 --  
 -- select * from pedidos;
-
+-- 
 -- CREATE TABLE produtos
 -- (
 --   id int,
@@ -190,13 +188,13 @@ COMMENT ON SCHEMA public IS 'standard public schema';
 -- UPDATE produtos SET preco = preco/100;
 -- 
 -- select * from produtos;
-
+-- 
 -- CREATE TABLE Transportadoras
 -- (
 --   id int,
 --   nome varchar(50),
 --   telefone varchar(50),
---   CONSTRAINT produtos_pkey PRIMARY KEY (id)
+--   CONSTRAINT transportadoras_pkey PRIMARY KEY (id)
 -- );
 -- 
 -- COPY transportadoras 
